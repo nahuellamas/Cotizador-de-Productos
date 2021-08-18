@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+<div class="container mx-auto">
+      <div id="contenido" class="pb-10">
+            <header class="bg-teal-500 text-white py-3 font-bold uppercase">
+                <h1 class="text-center">Cotizador de Productos</h1>
+                <p class="text-center">Seleccioná el producto y cotizá a tu medida</p>
+            </header>
+                <form class="mt-10 max-w-lg mx-auto" action="#" id="cotizar-producto">
+                        <div class="flex items-center mb-5">
+                            <label 
+                              class="font-bold  uppercase mr-2 w-20"
+                              for="producto"
+                            >Producto:</label>
+                            <select class="flex-1 bg-gray-100 p-3 appearance-none" id="producto">
+                                <option value="">- Seleccionar Producto -</option>
+                                <option value="Ventana">Ventana</option>
+                                <option value="Cortina">Cortina</option>
+                                <option value="Puerta">Puerta</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center mb-5">
+                              <label 
+                                class="font-bold  uppercase mr-2 w-20"
+                                for="ancho"
+                              >Ancho:</label>
+                              <input type="number" placeholder="CM"  class="flex-1 bg-gray-100 p-3 appearance-none" id="ancho"></input>
+                        </div>
+                        <div class="flex items-center mb-5">
+                          <label 
+                            class="font-bold  uppercase mr-2 w-20"
+                            for="alto"
+                          >Alto:</label>
+                          <input type="number" placeholder="CM"  class="flex-1 bg-gray-100 p-3 appearance-none" id="alto"></input>
+                        </div>
+                        <div id="selectorTipo"></div>
+
+                  <div id="cargando" class="hidden">
+                        <div class="spinner">
+                          <div class="rect1"></div>
+                          <div class="rect2"></div>
+                          <div class="rect3"></div>
+                          <div class="rect4"></div>
+                          <div class="rect5"></div>
+                      </div>
+                  </div>
+                  <div id="resultado"></div>
+                  <div class="flex  justify-center py-4">
+                      <button 
+                        type="submit" 
+                        class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded"
+                        >Cotizar Medidas
+                    </button>
+                  </div>
+ 
+                </form> 
+      </div> <!--#contenido-->
+</div>
+
+  <script src="js/app.js"></script>
+  </body>
+</html>
